@@ -317,12 +317,18 @@ p {
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
+  color-scheme: dark;
+  --fornace-bg: #12100f;
+  --fornace-card: #1c1917;
+  --fornace-sand: #2a2421;
+  --fornace-border: #3a302b;
+  --fornace-muted: #c7bdb1;
+  --background: var(--fornace-bg);
+  --foreground: #fbf9f5;
+  --card: var(--fornace-card);
+  --card-foreground: #fbf9f5;
+  --popover: var(--fornace-card);
+  --popover-foreground: #fbf9f5;
   --primary: oklch(87.1% 0.266 142.6);
   --primary-foreground: oklch(0.145 0 0);
   --secondary: oklch(0.269 0 0);
@@ -358,6 +364,18 @@ p {
     oklch(80.2% 0.134 225);
   --color-5:
     oklch(90.7% 0.231 133);
+}
+
+.dark .text-fornace-dark {
+  color: #fbf9f5;
+}
+
+.dark .hover\:text-fornace-dark:hover {
+  color: #fbf9f5;
+}
+
+.dark .hover\:bg-white:hover {
+  background: #2a2421;
 }
 
 @layer base {

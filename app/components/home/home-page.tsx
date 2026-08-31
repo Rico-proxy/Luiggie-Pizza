@@ -33,7 +33,7 @@ export function HomePage() {
               Where Neapolitan Tradition Meets{' '}
               <span className="font-serif text-fornace-sienna italic">Modern Craft.</span>
             </h1>
-            <p className="max-w-xl text-fornace-sand/80 text-base lg:text-lg leading-relaxed">
+            <p className="max-w-xl text-[#F3EDE2]/80 text-base lg:text-lg leading-relaxed">
               Hand-loomed sourdough fermented for 80 hours. Baked in a custom hand-built
               Vesuvian lava stone oven at 485C for exactly 90 blistering seconds.
             </p>
@@ -57,7 +57,7 @@ export function HomePage() {
                   <p className={`font-heading text-3xl font-bold ${toneClasses[stat.tone]}`}>
                     {stat.value}
                   </p>
-                  <p className="font-semibold text-fornace-sand/70 text-xs uppercase tracking-wider">
+                  <p className="font-semibold text-[#F3EDE2]/70 text-xs uppercase tracking-wider">
                     {stat.label}
                   </p>
                 </div>
@@ -86,7 +86,7 @@ export function HomePage() {
               <Flame className="w-6 h-6 text-fornace-sienna animate-flame" />
               <div>
                 <p className="font-bold text-white text-xs">Express Wood Bake</p>
-                <p className="text-[10px] text-fornace-sand/70">90 Seconds to Crisp</p>
+                <p className="text-[10px] text-[#F3EDE2]/70">90 Seconds to Crisp</p>
               </div>
             </div>
           </div>

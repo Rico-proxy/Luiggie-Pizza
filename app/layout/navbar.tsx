@@ -5,6 +5,7 @@ import { navItems } from './data/nav';
 import { useCart } from '~/components/cart/cart-context';
 import { Button } from '~/components/ui/button';
 import { fornaceImages } from '~/assets/images';
+import { ThemeToggle } from './theme-toggle';
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,6 +40,7 @@ export function Navbar() {
         </nav>
 
         <div className="hidden lg:flex items-center gap-4">
+          <ThemeToggle />
           <Button
             type="button"
             variant="unstyled"
@@ -54,6 +56,7 @@ export function Navbar() {
         </div>
 
         <div className="lg:hidden flex items-center gap-2">
+          <ThemeToggle />
           <Button
             type="button"
             variant="unstyled"

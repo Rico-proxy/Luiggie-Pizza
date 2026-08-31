@@ -12,7 +12,7 @@ export function Toast() {
       <CircleCheck className="h-5 w-5 text-fornace-gold" />
       <div>
         <p className="text-xs font-bold text-white">{toast?.title ?? 'Notification'}</p>
-        <p className="text-[11px] text-fornace-sand/80">{toast?.message ?? 'Updated.'}</p>
+        <p className="text-[11px] text-[#F3EDE2]/80">{toast?.message ?? 'Updated.'}</p>
       </div>
     </div>
   );

@@ -17,7 +17,7 @@ export function WinePage() {
           <h1 className="text-4xl font-normal lg:text-6xl">
             Authentic Italian Wine & Pizza Pairings
           </h1>
-          <p className="text-sm leading-relaxed text-fornace-sand/80">
+          <p className="text-sm leading-relaxed text-[#F3EDE2]/80">
             Hand-selected bio-dynamic wines imported from boutique vineyards across Tuscany,
             Campania, and Sicily, curated specifically for our wood-fired sourdough.
           </p>
