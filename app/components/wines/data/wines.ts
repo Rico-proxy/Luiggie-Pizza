@@ -1,4 +1,4 @@
-import { fornaceImages } from '~/assets/images';
+import { luiggieImages } from '~/assets/images';
 
 export type Wine = {
   id: string;
@@ -18,7 +18,7 @@ export const wines: Wine[] = [
     description:
       'Deep ruby red with wild berries, black truffle, and subtle spice. Excellent with Tartufo Nero & Guanciale.',
     price: 85,
-    image: fornaceImages.brunelloWine,
+    image: luiggieImages.brunelloWine,
     tone: 'sienna',
   },
   {
@@ -28,7 +28,7 @@ export const wines: Wine[] = [
     description:
       'Crisp volcanic white wine with hazelnut, chamomile, and honey. Matched with Mortadella & Bronte Pistachio Bianca.',
     price: 52,
-    image: fornaceImages.fianoWine,
+    image: luiggieImages.fianoWine,
     tone: 'olive',
   },
   {
@@ -38,7 +38,7 @@ export const wines: Wine[] = [
     description:
       'Fine bubbles, green apple, and citrus blossom. Fresh with Margherita, basil, and light starters.',
     price: 46,
-    image: fornaceImages.proseccoWine,
+    image: luiggieImages.proseccoWine,
     tone: 'olive',
   },
   {
@@ -48,7 +48,7 @@ export const wines: Wine[] = [
     description:
       'Cherry, leather, and warm spice with a dry finish. Built for pepperoni, sausage, and tomato-rich pies.',
     price: 58,
-    image: fornaceImages.chiantiWine,
+    image: luiggieImages.chiantiWine,
     tone: 'sienna',
   },
 ];

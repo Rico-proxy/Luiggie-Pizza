@@ -8,6 +8,11 @@ type CraftStep = {
   tone: 'sienna' | 'olive' | 'gold';
 };
 
+export const craftSection = {
+  eyebrow: 'The Uncompromising Standard',
+  title: 'Four Elements of Neapolitan Craftsmanship',
+};
+
 export const craftSteps: CraftStep[] = [
   {
     title: '1. 80-Hour Dough',

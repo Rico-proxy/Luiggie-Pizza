@@ -3,10 +3,10 @@ import { WinePage } from '~/components/wines/wine-page';
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: 'Wines | FORNACE 800' },
+    { title: 'Wines | Luiggie Pizza' },
     {
       name: 'description',
-      content: 'Reserve chef counter experiences and order Italian wine pairings at FORNACE 800.',
+      content: 'Reserve chef counter experiences and order Italian wine pairings at Luiggie Pizza.',
     },
   ];
 }

@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { navItems } from './data/nav';
 import { useCart } from '~/components/cart/cart-context';
 import { Button } from '~/components/ui/button';
-import { fornaceImages } from '~/assets/images';
+import { BrandLogo } from '~/components/shared/brand-logo';
 import { ThemeToggle } from './theme-toggle';
 
 export function Navbar() {
@@ -14,13 +14,7 @@ export function Navbar() {
   return (
     <header className="top-0 z-40 sticky bg-fornace-card/90 shadow-sm backdrop-blur-md px-4 md:px-6 py-3.5 border-fornace-border border-b">
       <div className="flex justify-between items-center gap-4 mx-auto max-w-7xl">
-        <NavLink to="/" className="flex items-center min-w-0" onClick={() => setIsOpen(false)}>
-          <img
-            src={fornaceImages.logo}
-            alt="Fornace 800"
-            className="w-auto max-w-[190px] md:max-w-[240px] h-14 md:h-20 object-contain"
-          />
-        </NavLink>
+        <BrandLogo onClick={() => setIsOpen(false)} />
 
         <nav className="hidden lg:flex items-center bg-fornace-sand/80 p-1.5 border border-fornace-border/80 rounded-2xl">
           {navItems.map((item) => (

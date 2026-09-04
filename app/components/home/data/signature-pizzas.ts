@@ -1,4 +1,4 @@
-import { fornaceImages } from '~/assets/images';
+import { luiggieImages } from '~/assets/images';
 
 export type PizzaCategory = 'classic' | 'white' | 'gourmet';
 
@@ -21,7 +21,7 @@ export const signaturePizzas: MenuItem[] = [
     description:
       'Black truffle veloute, Fior di Latte, crispy aged guanciale, roasted hazelnuts, rosemary oil.',
     price: 28,
-    image: fornaceImages.tartufoNero,
+    image: luiggieImages.tartufoNero,
     badge: "Chef's Selection",
     badgeTone: 'dark',
   },
@@ -32,7 +32,7 @@ export const signaturePizzas: MenuItem[] = [
     description:
       'Crushed San Marzano D.O.P., fresh Mozzarella di Bufala Campana, cold-pressed EVOO, basil leaves.',
     price: 21.5,
-    image: fornaceImages.margheritaExtra,
+    image: luiggieImages.margheritaExtra,
     badge: 'Traditional D.O.P.',
     badgeTone: 'olive',
   },
@@ -43,7 +43,7 @@ export const signaturePizzas: MenuItem[] = [
     description:
       'Bronte pistachio cream, Fior di Latte, Mortadella Bologna D.O.P., fresh stracciatella cheese.',
     price: 25,
-    image: fornaceImages.pistachioMortadella,
+    image: luiggieImages.pistachioMortadella,
     badge: 'Signature White',
     badgeTone: 'gold',
   },

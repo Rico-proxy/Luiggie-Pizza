@@ -1,87 +1,59 @@
-# Welcome to React Router!
+# Luiggie Pizza
 
-A modern, production-ready template for building full-stack React applications using React Router.
+Luiggie Pizza is a React Router app for an Italian pizzeria ordering experience. It includes a polished home page, signature pizza cards, a custom pizza builder, order tracking, wine pairings, reservations, cart state, toast feedback, and light/dark theming.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+## Stack
 
-## Features
+- React Router 7
+- React 19 with TypeScript
+- Tailwind CSS 4
+- shadcn/ui-style primitives for shared controls
+- Lucide React icons
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+## Project Structure
 
-## Getting Started
+```txt
+app/
+├── assets/              # Local brand assets
+├── components/
+│   ├── cart/            # Cart provider, drawer, and cart data
+│   ├── home/            # Home page shell, sections, and section data
+│   ├── menu/            # Pizza builder shell, sections, and builder data
+│   ├── shared/          # Reusable app components
+│   ├── tracker/         # Order tracker shell, sections, and order data
+│   ├── ui/              # Reusable UI primitives
+│   └── wines/           # Wine page shell, sections, and wine/reservation data
+├── layout/              # App layout, navigation, footer, and layout data
+├── lib/                 # Shared utilities
+└── routes/              # Clean route files that compose page components
+```
 
-### Installation
+## Development
 
-Install the dependencies:
+Install dependencies:
 
 ```bash
 npm install
 ```
 
-### Development
-
-Start the development server with HMR:
+Start the development server:
 
 ```bash
 npm run dev
 ```
 
-Your application will be available at `http://localhost:5173`.
-
-## Building for Production
-
-Create a production build:
+Build for production:
 
 ```bash
 npm run build
 ```
 
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
+Run type checking:
 
 ```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
+npm run typecheck
 ```
 
-The containerized application can be deployed to any platform that supports Docker, including:
+## Notes
 
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
+The app keeps page files intentionally small. Major sections live in page-specific `sections/` folders, while repeated lists and long copy live in dedicated `data/` files next to the features they support.

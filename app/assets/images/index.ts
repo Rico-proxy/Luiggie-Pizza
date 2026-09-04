@@ -1,6 +1,6 @@
 import logo from './logo.png';
 
-export const fornaceImages = {
+export const luiggieImages = {
   logo,
   heroPizza:
     'https://images.unsplash.com/photo-1574071318508-1cdbab80d002?q=80&w=900&auto=format&fit=crop',

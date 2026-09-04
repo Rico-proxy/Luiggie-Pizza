@@ -1,16 +1,10 @@
 import { useMemo, useState } from 'react';
 import { Crown, Plus } from 'lucide-react';
 import { signaturePizzas, type PizzaCategory } from './data/signature-pizzas';
+import { signatureMenuFilters } from './data/signature-menu-filters';
 import { useCart } from '~/components/cart/cart-context';
 import { Button } from '~/components/ui/button';
 import { formatCurrency } from '~/lib/format';
-
-const filters: Array<{ id: PizzaCategory | 'all'; label: string }> = [
-  { id: 'all', label: 'All Masters' },
-  { id: 'classic', label: 'Neapolitan Classics' },
-  { id: 'white', label: 'Pizza Bianca' },
-  { id: 'gourmet', label: 'Truffle & Reserve' },
-];
 
 const badgeClasses = {
   dark: 'bg-fornace-dark/90 text-fornace-gold border-fornace-gold/30',
@@ -42,7 +36,7 @@ export function SignatureMenu() {
           </h2>
         </div>
         <div className="flex flex-wrap gap-2 rounded-xl border border-fornace-border bg-fornace-sand p-1">
-          {filters.map((filter) => (
+          {signatureMenuFilters.map((filter) => (
             <Button
               key={filter.id}
               type="button"
